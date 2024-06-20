@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# Except the Site directory
+!/Site/
+
+# Ensure .gitignore itself is not ignored
+!.gitignore
+
+# Ignore log files in the Site directory
+Site/colourtest.html
