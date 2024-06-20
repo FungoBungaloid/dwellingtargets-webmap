@@ -1,11 +1,7 @@
-# Ignore everything
-*
-
-# Except the Site directory
-!/Site/
-
-# Ensure .gitignore itself is not ignored
-!.gitignore
-
-# Ignore log files in the Site directory
-Site/colourtest.html
+# Ignore specific files
+2011Census_B32_VIC_LGA_short.csv
+2016Census_G32_VIC_LGA.csv
+attribute_table.csv
+council_housing_data.csv
+ndadata.ipynb
+scraper.ipynb
