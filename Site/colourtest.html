@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scale Test</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .color-box {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-scale"></div>
+    <script>
+        const breaks = [0, 1.0642, 1.1628, 1.3778, 1.5574, 1.6431, 1.8035, 2.1022, 2.4018, 10];
+        const colors = d3.scaleThreshold()
+            .domain(breaks)
+            .range(d3.schemeRdBu[10].reverse()); // Adjusted to use 10 colors to cover the full range
+
+        const colorScaleDiv = d3.select("#color-scale");
+        breaks.forEach((breakValue, index) => {
+            colorScaleDiv.append("div")
+                .attr("class", "color-box")
+                .style("background-color", colors(breakValue));
+        });
+    </script>
+</body>
+</html>

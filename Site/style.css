@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#map {
+    height: 100%;
+}
+
+.leaflet-popup-content-wrapper {
+    background: rgba(255, 255, 255, 0.9) !important; /* 10% transparency */
+    border-radius: 5px !important; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.leaflet-popup-tip {
+    display: none !important; /* Remove speech bubble effect */
+}
+
+.leaflet-popup-content {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.popup-header {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dynamic-attribute {
+    color: red;
+    font-weight: bold;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.leaflet-bar a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    width: 100%; /* Ensure background covers full width of the text */
+}
